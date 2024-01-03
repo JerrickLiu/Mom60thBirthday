@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pictures Page</title>
+</head>
+<body>
+    <!-- Left half of the screen with rolling text -->
+    <div id="left-half" class="half-screen">
+        <header id="rolling-text"></header>
+    </div>
+
+    <!-- Container for the link at the bottom -->
+    <div id="bottom-button-container"></div>
+
+    <!-- Right half of the screen with pictures -->
+    <div id="right-half" class="half-screen">
+        <div id="image-container"></div>
+    </div>
+
+    <audio autoplay style="position: absolute; width: 1px; height: 1px; overflow: hidden;">
+        <source src="mother.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <script src="picture_script.js"></script>
+</body>
+</html>
