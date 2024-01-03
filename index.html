@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Mom Birthay Celebration</title>
 </head>
-<body>
+
+<body onclick="playAudio()">
     <header id="rolling-text"></header>
 
     <!-- Shooting stars and animation styles -->
@@ -16,11 +18,24 @@
     <!-- Container for the link at the bottom -->
     <div id="bottom-button-container"></div>
 
-    <audio autoplay style="position: absolute; width: 1px; height: 1px; overflow: hidden;">
+    <audio id="myAudio">
         <source src="song.mp3" type="audio/mp3">
-        Your browser does not support the audio tag.
+        Your browser does not support the audio element.
     </audio>
+
+    <script>
+        document.addEventListener('click', function () {
+            var audio = document.getElementById('myAudio');
+            // Check if the audio is paused, if yes, play it; otherwise, pause it
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
+
 </html>

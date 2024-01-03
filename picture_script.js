@@ -2,9 +2,6 @@ const imageContainer = document.getElementById("image-container");
 
 const textToDisplay = "Today marks not just the passing of another year but the celebration of a life filled with love, wisdom, and grace a life that has touched so many, especially mine. You are not just a mother; you are a source of inspiration, a pillar of strength, and the embodiment of love. Your laughter has been the melody to our family's song. Your sacrifices, your kindness, and your unwavering love have shaped the person I am today and our entire family. You are also a grandma now, and just like how you raised me and Renny, Noelle is lucky to have you as her grandmother. As you reach this milestone, I want to express my deepest gratitude for the countless sacrifices you've made, the lessons you've imparted, and the love you've showered upon us. You are not just 60 years old; you are 60 years young, with so much more love to give and wisdom to share. May this day be a reflection of the joy you've brought into our lives. May it be filled with the warmth of love, the company of those who cherish you, and the delight of seeing the impact you've had on the world around you. Happy Birthday, Mom! Here's to the next chapter of your incredible journey. May it be filled with love, laughter, and all the happiness you deserve. \n\n With all my love - Jerrick"; // Edit the text as needed
 
-
-
-
 const buttonElement = document.createElement("button");
 buttonElement.textContent = "Click here!";
 buttonElement.onclick = function() {
@@ -15,6 +12,7 @@ let currentImageIndex = 0; // Keep track of the current image index
 
 function generateText() {
     const displayElement = document.getElementById("rolling-text");
+    displayElement.style.fontSize = '30px';
     let index = 0;
 
     function displayNextCharacter() {
