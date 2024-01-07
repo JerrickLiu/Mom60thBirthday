@@ -5,7 +5,10 @@ const textToDisplay = "Today marks not just the passing of another year but the 
 const buttonElement = document.createElement("button");
 buttonElement.textContent = "Click here!";
 buttonElement.onclick = function() {
-    window.location.href = "video_page.html";
+    // Pause all audio elements on the page
+    const audioElements = document.querySelectorAll('audio');
+    audioElements.forEach(audio => audio.pause());
+    window.open("https://www.youtube.com/watch?v=Sj1_Ikd_pVw", "_blank");
 };
 
 let currentImageIndex = 0; // Keep track of the current image index
