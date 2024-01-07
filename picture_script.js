@@ -8,14 +8,14 @@ buttonElement.onclick = function() {
     // Pause all audio elements on the page
     const audioElements = document.querySelectorAll('audio');
     audioElements.forEach(audio => audio.pause());
-    window.open("https://www.youtube.com/watch?v=Sj1_Ikd_pVw", "_blank");
+    window.open("https://www.youtube.com/watch?v=0GvPQWjFICc", "_blank");
 };
 
 let currentImageIndex = 0; // Keep track of the current image index
 
 function generateText() {
     const displayElement = document.getElementById("rolling-text");
-    displayElement.style.fontSize = '30px';
+    displayElement.style.fontSize = '28px';
     let index = 0;
 
     function displayNextCharacter() {
